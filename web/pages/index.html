@@ -419,6 +419,19 @@
 
               <button type="submit" class="btn btn-info">Enviar</button>
 
+              <!-- Button using Popover -->
+              <a
+                tabindex="0" class="btn btn btn-danger ml-2" role="button"
+                data-toggle="popover"
+                data-placement="right"
+                data-trigger="focus"
+                title="Fugit deserunt saepe"
+                data-content="Expedita quod ab tempora dolore, sint assumenda iste ex molestiae totam cumque deleniti ipsa quidem accusantium facere laudantium."
+              >
+                Precisa de ajuda?
+              </a>
+              <!-- End of Button using Popover -->
+
             </form>
           </div>
 
@@ -476,5 +489,13 @@
     <script src="../../node_modules/jquery/dist/jquery.js"></script>
     <script src="../../node_modules/popper.js/dist/umd/popper.js"></script>
     <script src="../../node_modules/bootstrap/dist/js/bootstrap.js"></script>
+
+    <!-- Popover Script -->
+    <script>
+      $(function () {
+        $('[data-toggle="popover"]').popover()
+      })
+    </script>
+
   </body>
 </html>
